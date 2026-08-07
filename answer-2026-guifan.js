@@ -1,76 +1,51 @@
+// 2026合规知识测试 自动答题 v3 (自建答案库)
+// 用法: 地址栏 javascript:$.getScript('https://cdn.jsdelivr.net/gh/zhenghaol363-hue/exam-helper-cdn/answer-2026-guifan.js')
 (function(){
-function h(s){var r=0x811c9dc5;for(var i=0;i<s.length;i++){r=((r^s.charCodeAt(i))*0x01000193)>>>0;}return(r>>>0).toString(16).padStart(8,"0");}
-function c(s){return(s||"").replace(/<[^>]+>/g,"").replace(/\s+/g,"").replace(/[（]/g,"(").replace(/[）]/g,")");}
-var B={"f3c8c0d7":"B","03ffd027":"B","5d392e42":"B","819b2262":"C","12ee4992":"B","b5ce862b":"B","7f4c7464":"B","d3190f82":"A","97703fb2":"A","89a45016":"A","4d1b5761":"A","c43e0c7b":"B","589f0d1e":"A","7c6d9efb":"B","fc462094":"B","442283a3":"B","c73a499d":"B","3e4b7e2c":"C","6df8e8e4":"A","d5b0c68c":"A","a6434452":"B","ba5a7883":"B","a0f4abbd":"A","858cb90a":"B","7177205e":"D","a1e3bab0":"D","21a4649d":"D","44092469":"A","bf869f28":"A","cf80d058":"B","93a04183":"A","32cfd187":"A","a1e85aa5":"B","f7bf5e1b":"B","e3c77f9a":"A","38a4acf9":"A","71fdb185":"A","265c023a":"ABC","391a4628":"ABC","9448d79b":"ABC","ad79a500":"ABCD","60db125a":"ABC","7f29a41c":"ABCD","642b10a3":"ABC","5218001b":"ABC","b0b6ece9":"ABCD","d4374b19":"ABCD","9aae327a":"ABCD","098e70f2":"ABCD","f0792959":"ABCD","31a281f8":"ABC","ab4d7583":"ABCD","bdc1126c":"ABC","3c60e2d9":"ABCD","c38f6b72":"ABC","368cd52e":"ABCD","7c7de86f":"ABCD","405f0a15":"ABC","7ad9c501":"ABCD","5439e073":"ABCD","8c3094ab":"ABCD","6a31d60c":"AB","43ecab8a":"ABC","3b9d2bca":"ABC","cb138006":"ABC","b781e636":"ABC","5b816d16":"A","7c9b457a":"A","056027e4":"B","e48c2411":"B","f0a39d0a":"A","d3cbb7dc":"A","6228563e":"B","5cd6df82":"A","365f873d":"B","db494258":"A","981b7e3b":"A","f5d7f450":"B","cf7cb3aa":"A","185d6966":"B","f724b8cd":"A","fa73e872":"B","edd88e42":"B","5fabe01d":"A","3fd9064c":"B","d2fe97ec":"A","ac54a307":"A","4933e4f2":"A","aec5ef06":"B","fdcb1556":"B","9e5a8d27":"B","ad32bead":"A","d7226d1b":"A","2e147a6f":"B","d3ca4b70":"A","89dce226":"A","8a53efe0":"A","fa798cf1":"B","9179c134":"A","2349688f":"C","02e85334":"B","1c626c97":"A","45e998e4":"B","31045d75":"C","ba6e946a":"A","79185afa":"B","ae7dcb15":"C","c0a8cb8a":"A","42b51fe3":"A","acef2770":"A","0dd4fa20":"B","7722a774":"A","9671e04c":"A","d5688237":"A","1d4c703e":"A","e1f60774":"A","e65a9b28":"A","d01df54a":"A","f12159e0":"A","f0cc7719":"B","a3290bd8":"A","31f2216c":"A","a6aa0800":"A","2699cc7d":"A","d8bd2eda":"A","212bcf19":"D","7b8ddc0f":"D","33051c5b":"A","3c5d981b":"A","5e55c578":"B","a0cd0d8e":"A","1c967a54":"B","1a42dff2":"A","95ffa5fb":"B","721dca96":"A","6fde1118":"A","458aa2aa":"A","f6d2b5c0":"A","4a756e31":"A","44f9d1f6":"A","c410c747":"A","d7775085":"A","d94fcc9a":"A","e9006dbd":"B","3e1914b5":"A","d4dd06c8":"A","bbfc3ee1":"B","bf5264d2":"B","0d7826cf":"A","a22bb0c4":"B","3a24c7d6":"A","c00ca5ba":"A","83ff4c63":"B","41436c45":"B","3ab24a8c":"A","8cd1d98d":"A","95d040ef":"B","487ff251":"A","a495143d":"A","9c60852e":"B","84150eb6":"B","726f2cdb":"A","255f4f18":"B","d475f8fc":"B","cbb843ed":"A","19a62da9":"A","af4bc4b4":"B","71db6371":"B","7eeb1b74":"A","efed5d88":"A","2a2f43ad":"A","f624037a":"A","2f4dad7a":"A","cc20ddea":"A","8ab69189":"A","04f56360":"A","a2fe7cac":"A","fa2c46fc":"A","4635fdc9":"A","5a1da38e":"A","8a24ec72":"A","adbfb045":"B","c43ff6ff":"B","ba8a5754":"B","4287ecef":"A","9bdd3323":"A","fe190f0c":"A","f6ab20b8":"A","82852d20":"B","95552ef0":"A","a9711c76":"B","65cf160a":"B","0f5be5e5":"B","34305a90":"A","90b76561":"B","4530ecde":"A","c5e7c190":"A","2452a77d":"A","dfb1ebcb":"A","3dedba98":"A","ad6ce7c0":"A","7a3f72c0":"A","c82e8a5b":"A","cf48639b":"A","44cc90b7":"B","72d0b15c":"B","e3006f4e":"A","9e951db0":"B","4c5c5bf2":"A","e774a695":"B","4a6c8ec4":"A","7fe1dcef":"B","f702a769":"A","3f27dd39":"A","08839e51":"A","24dde735":"A","d708650f":"A","6d76032e":"A","afb9da51":"A","a6e5a553":"A","027d6ead":"B","a9fb6e5a":"A","7e3f9d0e":"B","bf97a36e":"B","26db5ef0":"A","466f6852":"B","324c3236":"B","88e75c77":"A","1d11a3ff":"B","e07f2cc9":"B","93a91288":"A","ce39803f":"A","67433ef5":"A","e61ea97e":"B","34d33ef5":"A","da858743":"A","1b418dd2":"B","c5bc443c":"A","1e2d3f08":"B","3efa3cf1":"A","1db054d3":"A","60be1008":"B","bc95bc28":"A","09cc7aea":"B","74c58081":"A","3e5f6345":"B","9b164b1b":"A","95adcb8b":"B","529ec350":"A","5475b662":"A","064de0c0":"A","9c956577":"A","c135d1e8":"A","753eb4c5":"A","00fd1001":"A","1b3abd80":"B","55817788":"A","844fc235":"B","fbf3c2c8":"B","240c4740":"A","35524892":"B","372666f5":"A","21ca6180":"A","674ee15a":"B","dfc74c4d":"A","af02522f":"B","f75985fa":"A","6cad4768":"A","f8f00d44":"A","7a1cc4aa":"A","a5e1646a":"A","59ec0799":"B","5eb5c244":"B","15b0e9d8":"A","6769c0b2":"B","7b1e5951":"A","f9b3ca2f":"A","8687d700":"B","d2f1f2f7":"B","85a6f183":"A","c90b5bcd":"B","f4aeb28a":"A","80f5a7a3":"A","fc3ceced":"A","d6654573":"A","9e6fe5c7":"A","3add534a":"B","0a0553ae":"B","10ce2e24":"B","74c75ec8":"A","36881ef0":"B","ac5203e8":"A","7cb47be1":"B","221835ec":"A","9c42b5d8":"A","fb2a49a8":"A","0cf3b4cf":"B","7db14305":"B","1b534543":"A","a38e21d5":"B","b0b16a3e":"A","a3b5bbec":"B","2e13718b":"A","c94fee12":"B","a7a45fe2":"B","faed75dd":"B","bda767f4":"A","98a9f401":"A","3a7fb7b0":"A","f0e76d43":"A","f9be5953":"A","6db86210":"B","4da8f383":"B","5ae29ac9":"A","0be574bd":"B","f9aeada7":"A","f3ec02b8":"B","18da1f63":"A","d3daa205":"A","3a12a166":"A","55350255":"B","4bff7bfc":"B","581a1152":"A","1a43898e":"B","ed2bff93":"A","5f7586d6":"A","50ebe0e0":"A","0c172cba":"A","53e45396":"A","0413886d":"A","4daec9aa":"A","2460c202":"B","4c51be9b":"A","9a0ae9b3":"A","12678ba9":"A","63487087":"B","30a9807f":"B","5b4cc4af":"A","4274495f":"B","55e798af":"A","67bcee4f":"B","d6b0de07":"B","fb96a3d8":"A","266608ea":"B","7fb58e4e":"C","50c597a0":"A","eba4396e":"B","fd99fba2":"A","ef6d31ed":"D","a7c68398":"B","15af0d7a":"B","ee8efae6":"B","b40fdb7d":"B","6d2dca0f":"D","88dc484f":"D","8ef32e7b":"A","75388aa4":"A","e2b97eba":"A","d5e3d6ce":"A","e1321efc":"A","e07c68aa":"A","d2c1b2c0":"A","2b4ca88c":"A","87dfdb2f":"A","11d8cb49":"A","df9c8fca":"A","2c41e128":"B"};
-
-// 一键触发
-function pick(el){try{el.click();}catch(e){}try{el.dispatchEvent(new Event("change",{bubbles:1}));el.dispatchEvent(new Event("input",{bubbles:1}));}catch(e){}}
-
-// 扫描题目容器
-var qs=[],seen=new Set();
-document.querySelectorAll("input[type=radio],input[type=checkbox]").forEach(function(inp){
-  var container=inp;
-  for(var i=0;i<8;i++){container=container.parentElement;if(!container)break;
-    if(container.nodeName==="BODY")break;
-    if(seen.has(container))break;
-    var txt=(container.textContent||"").trim();
-    if(txt.length>20&&txt.length<2000){
-      seen.add(container);qs.push(container);break;
-    }
+  var B = {"0a11de8421d7ba57d2c2bdd2ced55d59": {"ans": 0, "type": "SINGLE"}, "2a4a8e2cce9187b421d97db371051c56": {"ans": 0, "type": "SINGLE"}, "172a6586a9881a14e47632a5d1af4f7a": {"ans": 0, "type": "SINGLE"}, "2cfba687f15030863522f46e83f46440": {"ans": 3, "type": "SINGLE"}, "c78b82cee2912ed47a1351480af94d7c": {"ans": 3, "type": "SINGLE"}, "3d484077847bb9a10d110385096223ac": {"ans": 1, "type": "SINGLE"}, "5e6a073008c452352664a530801fbf73": {"ans": 2, "type": "SINGLE"}, "f07346548bc74032d3f23082006527f9": {"ans": 0, "type": "SINGLE"}, "a596f255fecb2abf64de1aa00426996a": {"ans": 1, "type": "SINGLE"}, "3fa222cc556058b9b307a58d09597f56": {"ans": 0, "type": "SINGLE"}, "68cdb5bdff8caeccb6dae83e7d1dc313": {"ans": 0, "type": "SINGLE"}, "8b43c63d179ac9e0d9f5472679ea0e15": {"ans": 0, "type": "SINGLE"}, "fdd852e6e989387d92017e4a519d8c3b": {"ans": 2, "type": "SINGLE"}, "7ee496f5899970a0618ba6172d73acc4": {"ans": 0, "type": "SINGLE"}, "708eb042a68be7b763772016b0030c52": {"ans": 0, "type": "SINGLE"}, "391cc922d97fdbf8bd556c03a4e7279a": {"ans": 2, "type": "SINGLE"}, "f571df135ee9de9b8c9a4b95ab5dd78a": {"ans": 0, "type": "SINGLE"}, "77e2827b5b1c2d670279995a2c685915": {"ans": 3, "type": "SINGLE"}, "0f391beb48d9a8d67ff4306e916584bf": {"ans": 3, "type": "SINGLE"}, "fb8c713dbded2a6358f2e9b543cab966": {"ans": 3, "type": "SINGLE"}, "ade5e81c238aeb47258f3c3221266710": {"ans": 2, "type": "SINGLE"}, "fa3ffe86337197fbec96383416cba715": {"ans": 0, "type": "SINGLE"}, "3eabd50afc9a645cd957e1d2c285a68c": {"ans": 0, "type": "SINGLE"}, "7fcdcc1065aa3dde64d7666e57c1e5de": {"ans": 3, "type": "SINGLE"}, "ff603884da866ccc5242b32069882575": {"ans": 1, "type": "SINGLE"}, "97605a01c5dc53664a4586db8fdc4de2": {"ans": 3, "type": "SINGLE"}, "ba9e8ebd695bf929934f4b8c3c8ceb4c": {"ans": 3, "type": "SINGLE"}, "d02606aaa0d33e061fc0da5cc95ff1d0": {"ans": 0, "type": "SINGLE"}, "703f06ebd7be0dcececa8761eb6e0734": {"ans": 2, "type": "SINGLE"}, "6917ebfff036f88af22bdc493f22c892": {"ans": 0, "type": "SINGLE"}, "939d894705f07c1995da91ea12c9bbb0": {"ans": 3, "type": "SINGLE"}, "3d9b1652e4d7da5b206a80037b9aba9d": {"ans": 1, "type": "SINGLE"}, "ce3ed2b7224f5523d4cfecf4d530559e": {"ans": 0, "type": "SINGLE"}, "c74db0757bc1e594017667f06a31ba50": {"ans": 3, "type": "SINGLE"}, "b71779ca13116b1076329b7ce33aaf13": {"ans": 2, "type": "SINGLE"}, "c70cacc0dc49239ee5e9a216df7b3b0c": {"ans": 0, "type": "SINGLE"}, "383d60ba97f3e72ecb73d69154f3f362": {"ans": 0, "type": "SINGLE"}, "ddcf19eb737f4507fea14ac672bdcee1": {"ans": 1, "type": "SINGLE"}, "b1e63cb41197a8c5e6a69fc0ea06fe0b": {"ans": 3, "type": "SINGLE"}, "50134aba6577882a14fdd215c8984808": {"ans": 1, "type": "SINGLE"}, "8ce83fbbdf33ec7d257c9ccf19328f03": {"ans": [0], "type": "MULTIPLE"}, "9861053a5ea01958ebd10cc10bbced3d": {"ans": [0], "type": "MULTIPLE"}, "e80a33a50b5acad457436b9cdb182729": {"ans": [0], "type": "MULTIPLE"}, "ddee364e219e43b52f7fc92e018d776b": {"ans": [0], "type": "MULTIPLE"}, "8e79b78b8692983c3739a144a190bb2d": {"ans": [0], "type": "MULTIPLE"}, "a196c5f4905d7db9362b5e5375f68482": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "d25d3029c712821243f46ee03dcc66e4": {"ans": [0], "type": "MULTIPLE"}, "34216f1c4c7b9b6fac4db29261c32853": {"ans": [0], "type": "MULTIPLE"}, "7f1500e073da9af37bc8310d3c035581": {"ans": [0], "type": "MULTIPLE"}, "eef4e2cff97b4d8c3f7947ce9ff1bc17": {"ans": [0], "type": "MULTIPLE"}, "27efcc5b349a71bb40850e155b80672f": {"ans": [0], "type": "MULTIPLE"}, "fc3c7e806a4e06eeab2dc18a25a2b285": {"ans": [0], "type": "MULTIPLE"}, "cec5ac897f35245a7cd9b3896a7d47d5": {"ans": [0], "type": "MULTIPLE"}, "9315143458845b9f41cc5f76691765b5": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "f8c3298d55864731959be447273fdfea": {"ans": [0], "type": "MULTIPLE"}, "41d98f449d18be6dfa559d09ffd82fd6": {"ans": [0], "type": "MULTIPLE"}, "7aebc625752cbb5e822de1cffda19db1": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "4391d042c1b2655f2f7756fef84fbb60": {"ans": [0], "type": "MULTIPLE"}, "61f9d21346de8e89887b7469da6257f1": {"ans": [0], "type": "MULTIPLE"}, "439579ee5bb2b68160801a85817004cd": {"ans": [0], "type": "MULTIPLE"}, "a3d1cb77a1428ad3be27c2c7eefdf3b8": {"ans": true, "type": "JUDGMENT"}, "89632d8d7106d3294949c1948670cc65": {"ans": true, "type": "JUDGMENT"}, "051c6fad96232eb3ee864a03a5dcd6d0": {"ans": true, "type": "JUDGMENT"}, "4af1591a804c5ffdbfb5decef5ed56f3": {"ans": false, "type": "JUDGMENT"}, "4b72a269918064c2f4dcabba35a9f087": {"ans": false, "type": "JUDGMENT"}, "f9215a5434feb2da5926875bf77dddf0": {"ans": false, "type": "JUDGMENT"}, "034bba7926980d15172a898d7444ceeb": {"ans": false, "type": "JUDGMENT"}, "66cbdd317caa6d4347b5f08fda5fe306": {"ans": true, "type": "JUDGMENT"}, "a7841642aaf8570a92746cf5a6c4f93b": {"ans": false, "type": "JUDGMENT"}, "77f5bfde021c5eb05dd5a365edc3662f": {"ans": false, "type": "JUDGMENT"}, "a3dcd7e50980e41fcdd6b58186b147d7": {"ans": true, "type": "JUDGMENT"}, "330553de25f5ccbed43f878691252070": {"ans": false, "type": "JUDGMENT"}, "bca79a12c4e176b7ff5f6cef0f197150": {"ans": true, "type": "JUDGMENT"}, "7619dcf6d87d0eeeae671edc2a05dfbb": {"ans": false, "type": "JUDGMENT"}, "a7857d37a5f20f5172cf8e35dd028b58": {"ans": true, "type": "JUDGMENT"}, "fe1f9ad3f50fbf86c73acb0a23c0e89c": {"ans": true, "type": "JUDGMENT"}, "888703cc8952094f80f4485d50f47e70": {"ans": true, "type": "JUDGMENT"}, "d42a4ff44e33cb61dca605a5394fdbb5": {"ans": false, "type": "JUDGMENT"}, "e374c06d60c623b0ad67e3025391af69": {"ans": false, "type": "JUDGMENT"}, "d36faace986b48be1facd17da51787ed": {"ans": true, "type": "JUDGMENT"}, "2bc35c2ecfcc4b6aa5ae56d93cbbd38f": {"ans": true, "type": "JUDGMENT"}, "cb78b2366c7d44ac1936d837ba69b849": {"ans": true, "type": "JUDGMENT"}, "4040395fd15319842499e5facd6f064d": {"ans": false, "type": "JUDGMENT"}, "031b7a79210cfea52c718a350d324004": {"ans": true, "type": "JUDGMENT"}, "725a4402b5f0ce6a137c62303329df19": {"ans": true, "type": "JUDGMENT"}, "1d3bac289d4d5caf47792584457b25cb": {"ans": false, "type": "JUDGMENT"}, "0ebadc233f02a44553384712dc8ebd89": {"ans": false, "type": "JUDGMENT"}, "0b3771a69d2039f22039a90685bdc407": {"ans": true, "type": "JUDGMENT"}, "729bb0001755d384c5eb8277c7c420e2": {"ans": false, "type": "JUDGMENT"}, "ae4e4b5cad2abcfed12d109021323bd0": {"ans": true, "type": "JUDGMENT"}, "b8ecd4e807c88462da2577380cd357ca": {"ans": 0, "type": "SINGLE"}, "3d723f3755e11bd9cc310dfe4782d906": {"ans": 1, "type": "SINGLE"}, "6828ff41d588aa7c933a28a716a3bbfd": {"ans": 0, "type": "SINGLE"}, "f89139054e2622a16d12b73269a10ea6": {"ans": 3, "type": "SINGLE"}, "ca207d82b5a87d2c2b3cec008a76787f": {"ans": 0, "type": "SINGLE"}, "3ad691615b63dbf75d44610fe841fb4a": {"ans": 0, "type": "SINGLE"}, "8c2852fc8de0f2c8e4fccb68785e2611": {"ans": 0, "type": "SINGLE"}, "5f25fca32d0c883aa562869c74b23cb5": {"ans": 1, "type": "SINGLE"}, "6501c6037d9d5caab6981a184deba6a7": {"ans": 1, "type": "SINGLE"}, "fd92c2c9c1727c252cadd9c315a682a1": {"ans": 1, "type": "SINGLE"}, "d7e30ca587622874ddb722d7df320c80": {"ans": 0, "type": "SINGLE"}, "f305e581fb671aed7873ca5dbd92d0a5": {"ans": 1, "type": "SINGLE"}, "9dcf0f3e57896a8c049dd51be1216cec": {"ans": 2, "type": "SINGLE"}, "7ede47b8a81ee750be6e53661219e29a": {"ans": 3, "type": "SINGLE"}, "8bc80ebca6736e5ac7dc99b51e263385": {"ans": 1, "type": "SINGLE"}, "6a74c391a360be48e088f35b38222c1e": {"ans": 0, "type": "SINGLE"}, "8ba46f5f1928c39080e1f4d11ab6fbad": {"ans": 3, "type": "SINGLE"}, "496fa748fae66dcac6b2238f29e8d283": {"ans": 1, "type": "SINGLE"}, "6d7f3713cc1f99aca61c390ad463ba39": {"ans": 0, "type": "SINGLE"}, "86ba2596552cbf7506e07f7069649e37": {"ans": 0, "type": "SINGLE"}, "d243540f33e55283c6f9e51a872513ef": {"ans": 0, "type": "SINGLE"}, "185ac1162c736dc48d9f44884426c3a8": {"ans": 1, "type": "SINGLE"}, "5397b874b930cae75edf096ee09547db": {"ans": 2, "type": "SINGLE"}, "f7bb6e115658726b63aa419b64d27244": {"ans": 0, "type": "SINGLE"}, "44161049867c22af0760dad0b169ed88": {"ans": 3, "type": "SINGLE"}, "cc866d6725ea07129e0973cbb8d003d4": {"ans": 0, "type": "SINGLE"}, "5eb6f4ea3e24a18eb4820a3a3f96c911": {"ans": 0, "type": "SINGLE"}, "edeee4ce00b63b7ff27d2b9e6f4e5a24": {"ans": 0, "type": "SINGLE"}, "af30d3400e3e54c128e542df974c34ab": {"ans": 3, "type": "SINGLE"}, "3eb8ea05bbbbc49d3beba2f79dc0ed01": {"ans": 0, "type": "SINGLE"}, "d4bfa29d20284e45ce7cb4c3e1afc594": {"ans": 3, "type": "SINGLE"}, "81a4eccbfc6ca89fba43a50cf1aec7ef": {"ans": 0, "type": "SINGLE"}, "58c7ff84e773c8a20b0707735eee96c9": {"ans": 3, "type": "SINGLE"}, "24ff673946ccc751cdc7299d1ddef955": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "f1676b0ea6facec610665d8521a6cede": {"ans": [0, 1, 2], "type": "MULTIPLE"}, "2567af921a21b995362f75810ceb8606": {"ans": [0, 1, 2, 4], "type": "MULTIPLE"}, "39549f092b360c2312b18294c9a4a206": {"ans": [0, 1, 2, 3, 4], "type": "MULTIPLE"}, "cd7ea9f48fbd2a385e4175551f1cc695": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "e78c1f87f8a334168d6a2b1d31ac8e08": {"ans": [0, 1, 2], "type": "MULTIPLE"}, "1bd121ae4b2e6806a44ada94311354e8": {"ans": [0, 1, 2, 4], "type": "MULTIPLE"}, "071dd8e4f8a1c9c2380dbf876e36bfe4": {"ans": [0, 1, 2, 3, 4], "type": "MULTIPLE"}, "e4314246bde0df6d97e1d342e303e377": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "e3b0d0bef72476e45dc1646b0f8bc44e": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "71809dd848620d329d3790240b5a8d70": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "4aecdfe1881182a29c5a555d2a8d5e0d": {"ans": [0, 1, 2], "type": "MULTIPLE"}, "cf5848433ee13250c13b33df9243170c": {"ans": [0, 1, 2, 3, 4], "type": "MULTIPLE"}, "fb1b3006eb708fa676adca6842bc06b9": {"ans": [0, 1, 2, 4], "type": "MULTIPLE"}, "7e08dbed86a3d4700be529b63757ea5f": {"ans": [0, 1, 2, 3, 4], "type": "MULTIPLE"}, "56de30ca3d334160a4e985b7145ab9bb": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "4f17c6f57d059d9f53b4efd240aea1c6": {"ans": [0, 1, 2, 3], "type": "MULTIPLE"}, "4e6f721e0c1fda916e1a7a5a775c3e6c": {"ans": false, "type": "JUDGMENT"}, "c9ded606c37313eb74e14124ca84f55d": {"ans": false, "type": "JUDGMENT"}, "e503804a205ccc18bd2ee17b5c26c235": {"ans": false, "type": "JUDGMENT"}, "7067d9a72a3710df5cf62c78ea9de376": {"ans": false, "type": "JUDGMENT"}, "6d5887ab6b14411c6cbc1270600391ec": {"ans": true, "type": "JUDGMENT"}, "d1c1c094d9e28ee216f7260cd2a05dee": {"ans": true, "type": "JUDGMENT"}, "00fb280fc34853a47bfc4e20ebde6cfc": {"ans": false, "type": "JUDGMENT"}, "689ab921359a1fb8ab542166612b4234": {"ans": true, "type": "JUDGMENT"}, "859986b03f2932a5323a8f3dd256de72": {"ans": true, "type": "JUDGMENT"}, "67b3560b1a8b65fe030e23adb336770f": {"ans": false, "type": "JUDGMENT"}, "574861af9f0c60bcb37e6c2787e5d8dd": {"ans": false, "type": "JUDGMENT"}, "557b9778ebdc0de1c6199edb69ce17a3": {"ans": true, "type": "JUDGMENT"}, "541aa3d47f312880e866b0f4b63e7a74": {"ans": true, "type": "JUDGMENT"}, "22a9a01da15581916b2e6f9719165135": {"ans": true, "type": "JUDGMENT"}, "a0dc8310b74fb0bfb0104264a30c1983": {"ans": false, "type": "JUDGMENT"}, "f26710f6bb4ac7eaa98681a72b279947": {"ans": true, "type": "JUDGMENT"}, "41edc477be490c7ba230de23f8064657": {"ans": true, "type": "JUDGMENT"}, "7fc25045ab57dcbc5ee1db3d47f179e1": {"ans": true, "type": "JUDGMENT"}, "41c3351f05ccfee96dbe7e3e56c543a2": {"ans": false, "type": "JUDGMENT"}, "7a3f08c5780e4abdf212e99b5435d999": {"ans": false, "type": "JUDGMENT"}, "e6a040d88833f6adfd49bfb3261b3bee": {"ans": false, "type": "JUDGMENT"}, "a09c1272ffc729fa2a7a7f18256b6dc5": {"ans": true, "type": "JUDGMENT"}, "fe3d3bcee0089c06888f8510df4e505c": {"ans": false, "type": "JUDGMENT"}, "db69240bd17f2ff9d3ac793115513d63": {"ans": false, "type": "JUDGMENT"}};
+  function c(s){ return String(s).replace(/[^\u4e00-\u9fa5a-zA-Z0-9_\u2160-\u217F]/g, ''); }
+  function h(s){
+    if (typeof md5 === 'function') return md5(c(s));
+    var x = 0x811c9dc5, i;
+    for (i = 0; i < s.length; i++) { x ^= s.charCodeAt(i); x = (x * 0x01000193) >>> 0; }
+    return 'fnv_' + x.toString(16);
   }
-});
-if(!qs.length){
-  document.querySelectorAll("div,li,section,fieldset").forEach(function(el){
-    if(seen.has(el))return;
-    var txt=(el.textContent||"").trim();
-    if(txt.length>20&&txt.length<2000&&el.querySelectorAll("input").length>=2){
-      seen.add(el);qs.push(el);
+  function pick(inp, val){
+    if (inp.checked === !!val) return;
+    inp.click();
+    if (inp.checked !== !!val) inp.checked = !!val;
+    try { inp.dispatchEvent(new Event('change', {bubbles:true})); } catch(e){}
+  }
+  var panels = Array.from(document.querySelectorAll('.question-panel-middle'));
+  var hit = 0, miss = 0;
+  panels.forEach(function(p){
+    var full = (p.innerText || '').trim();
+    var text = full.split('参考答案')[0];
+    var lines = text.split('\n').map(function(l){ return l.trim(); }).filter(function(l){ return l; });
+    var stems = [];
+    for (var i = 0; i < lines.length; i++) {
+      if (!/^[A-H]\s*[.、．]/.test(lines[i])) stems.push(lines[i]);
+    }
+    while (stems.length > 0 && /^\d+$/.test(stems[0])) stems.shift();
+    var stem = stems.join('');
+    var key = h(stem);
+    var entry = B[key];
+    var cls = (p.className || '').toString();
+    var type = cls.indexOf('MULTIPLE') >= 0 ? 'MULTIPLE' : (cls.indexOf('JUDGMENT') >= 0 ? 'JUDGMENT' : 'SINGLE');
+    var inputs = Array.from(p.querySelectorAll('input[type=radio], input[type=checkbox]'));
+    if (!entry) { miss++; return; }
+    hit++;
+    var ans = entry.ans;
+    if (typeof ans === 'boolean') {
+      var want = ans ? 'true' : 'false';
+      var r = inputs.find(function(x){ return x.value === want; });
+      if (r) pick(r, true);
+    } else if (type === 'MULTIPLE') {
+      ans.forEach(function(ai){ if (inputs[ai]) pick(inputs[ai], true); });
+    } else {
+      if (inputs[ans]) pick(inputs[ans], true);
     }
   });
-}
-if(!qs.length){alert("没找到题目，请确认在考试/练习页面");return;}
-
-var hit=0,miss=0;
-qs.forEach(function(p){
-  // 提取题干：优先标题元素，含 p 标签（21tb 常用）
-  var stemEl=p.querySelector("h2,h3,h4,h5,h6,.title,[class*=title],[class*=stem],[class*=question],strong,b,p");
-  var stem=c((stemEl||p).textContent||"");
-  // 去掉选项文字，只留题干
-  var inputs=p.querySelectorAll("input");
-  inputs.forEach(function(inp){
-    var label=inp.parentElement;if(label)stem=stem.replace(c(label.textContent||""),"");
-  });
-
-  var key=h(stem.substr(0,80));
-  var ans=B[key];
-  if(!ans){miss++;return;}
-  hit++;ans=ans.toUpperCase();
-
-  // 填答案
-  var cbs=p.querySelectorAll("input[type=checkbox]");
-  var rds=p.querySelectorAll("input[type=radio]");
-  if(rds.length){
-    var idx=ans.charCodeAt(0)-65;
-    if(idx>=0&&idx<rds.length){rds[idx].checked=true;pick(rds[idx]);pick(rds[idx].parentElement||rds[idx]);}
-  }else if(cbs.length){
-    for(var i=0;i<cbs.length;i++){
-      var want=ans.indexOf(String.fromCharCode(65+i))>=0;
-      cbs[i].checked=want;if(want){pick(cbs[i]);pick(cbs[i].parentElement||cbs[i]);}
-    }
-  }else{
-    // 对/错文字匹配（判断题无 radio 时）
-    var isRight=ans==="A"||ans.indexOf("对")>=0||ans.indexOf("√")>=0||ans.indexOf("正")>=0;
-    var nodes=p.querySelectorAll("label,span,div,button,li,a,em,td,dt,dd");
-    for(var j=0;j<nodes.length;j++){
-      var el=nodes[j],t=c(el.textContent||"");
-      if(t.length>4||t.length===0)continue;
-      var right=t.indexOf("对")>=0||t==="√"||t==="正确"||t==="true"||t==="T"||t==="是";
-      var wrong=t.indexOf("错")>=0||t==="×"||t==="X"||t==="错误"||t==="false"||t==="F"||t==="否";
-      if(right&&isRight){pick(el);el.style.outline="2px solid #4caf50";break;}
-      else if(wrong&&!isRight){pick(el);el.style.outline="2px solid #f44336";break;}
-    }
-  }
-});
-
-alert("完成！找到"+qs.length+"题，命中"+hit+"，未命中"+miss);
-})();
+  var msg = '找到 ' + panels.length + ' 题，命中 ' + hit + '，未命中 ' + miss;
+  alert(msg);
+  return msg;
+})()
