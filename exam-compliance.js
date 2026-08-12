@@ -1,4 +1,4 @@
-// exam-compliance.js — v4 合规密钥（修复1.5分+正则）
+// exam-compliance.js — v4 合规密钥(修复1.5分)
 (function(){
   if (window.__COMPLIANCE_RUN__) return;
   window.__COMPLIANCE_RUN__ = true;
@@ -19,18 +19,17 @@
       r = mul32(x, 0x01000193);
     }
     var hex = (r >>> 0).toString(16);
-    while (hex.length < 8) hex = '0' + hex;
+    while (hex.length < 8) hex = "0" + hex;
     return hex;
   }
 
-  function clean(s){ return (s||'').replace(/[^一-龥a-zA-Z0-9_Ⅰ-ⅿ]/g,''); }
+  function clean(s){ return (s||"").replace(/[^\u4e00-\u9fa5a-zA-Z0-9_\u2160-\u217F]/g,''); }
 
   function lookup(stem){
     var c = clean(stem);
     if (!c) return null;
     return BANK[h(c)] || null;
   }
-
   function doFill(){
     var panels = Array.from(document.querySelectorAll('.question-panel-middle'));
     if (!panels.length) panels = Array.from(document.querySelectorAll('.question-panel'));
