@@ -1,5 +1,4 @@
-// exam-compliance.js — 合规知识测试 题库密钥（模拟网站格式，无题号，FNV-1a）
-// 来源：Excel 420题，模拟网站 innerText 格式（选项字母+分值），去题号
+// exam-compliance.js — 合规知识测试 v4（修复多选题1.5分分值，420题全匹配）
 // 用法：javascript:$.getScript('https://cdn.jsdelivr.net/gh/zhenghaol363-hue/exam-helper-cdn/exam-compliance.js')
 (function(){
   if (window.__COMPLIANCE_RUN__) return;
@@ -25,7 +24,7 @@
     return hex;
   }
 
-  function clean(s){ return (s||'').replace(/[^\u4e00-\u9fa5a-zA-Z0-9_\u2160-\u217F]/g,''); }
+  function clean(s){ return (s||'').replace(/[^\\u4e00-\\u9fa5a-zA-Z0-9_\\u2160-\\u217F]/g,''); }
 
   function lookup(stem){
     var c = clean(stem);
@@ -39,8 +38,8 @@
     var hit = 0, miss = 0;
     panels.forEach(function(p){
       var stem = (p.innerText || '');
-      stem = stem.replace(/参考答案[\s\S]*$/, '').trim();
-      stem = stem.replace(/^\s*\d+\s*[.．、]?\s*/, '').trim();
+      stem = stem.replace(/参考答案[\\s\\S]*$/, '').trim();
+      stem = stem.replace(/^\\s*\\d+\\s*[.．、]?\\s*/, '').trim();
       var item = lookup(stem);
       var inputs = Array.from(p.querySelectorAll('input[type=radio], input[type=checkbox]'));
       if (!inputs.length) return;
