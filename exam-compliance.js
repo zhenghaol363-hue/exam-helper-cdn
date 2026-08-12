@@ -1,4 +1,4 @@
-// exam-compliance.js — 合规知识测试 v4（修复多选题1.5分分值+正则转义）
+// exam-compliance.js — v4 合规密钥（修复1.5分+正则）
 (function(){
   if (window.__COMPLIANCE_RUN__) return;
   window.__COMPLIANCE_RUN__ = true;
@@ -23,7 +23,7 @@
     return hex;
   }
 
-  function clean(s){ return (s||'').replace(/[^\u4e00-\u9fa5a-zA-Z0-9_\u2160-\u217F]/g,''); }
+  function clean(s){ return (s||'').replace(/[^一-龥a-zA-Z0-9_Ⅰ-ⅿ]/g,''); }
 
   function lookup(stem){
     var c = clean(stem);
